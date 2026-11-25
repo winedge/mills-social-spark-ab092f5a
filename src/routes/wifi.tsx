@@ -82,8 +82,9 @@ function GuestWifiPage() {
         <div className="mx-auto flex w-full max-w-2xl flex-col items-center animate-slide-up">
           <img src={millsLogo.url} alt="Mill's Modern Social" className="mb-8 h-auto w-52 object-contain sm:w-60 lg:mb-16" />
           <p className="mb-3 font-mono text-xs uppercase text-accent">83 E Broadway Rd · Tempe, AZ</p>
-          <h1 className="mx-auto max-w-xl font-wifi-display text-5xl font-semibold uppercase leading-[1.1] text-balance sm:text-6xl lg:text-7xl">
-            Good times.<br />Great connection.
+          <h1 className="@container mx-auto w-full max-w-2xl font-wifi-display font-semibold uppercase leading-[1.1]">
+            <span className="block whitespace-nowrap text-[28px] @min-[340px]:text-4xl @min-[460px]:text-5xl @min-[560px]:text-6xl">Good times.</span>
+            <span className="block whitespace-nowrap text-[28px] @min-[340px]:text-4xl @min-[460px]:text-5xl @min-[560px]:text-6xl">Great connection.</span>
           </h1>
           <p className="mx-auto mt-4 hidden max-w-lg text-sm text-foreground/80 sm:block lg:text-base">
             Join us for the game, stay for the company, and get online while you’re here.
