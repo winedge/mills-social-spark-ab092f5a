@@ -3,8 +3,6 @@ import { Link, useRouterState } from "@tanstack/react-router";
 import { Wifi } from "lucide-react";
 import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/components/ui/dialog";
 
-const KEY = "mills-wifi-prompt-seen";
-
 export function WifiPrompt() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const [open, setOpen] = useState(false);
@@ -12,15 +10,9 @@ export function WifiPrompt() {
 
   useEffect(() => {
     if (excluded) return;
-    try {
-      if (sessionStorage.getItem(KEY)) return;
-      sessionStorage.setItem(KEY, "1");
-    } catch {
-      return;
-    }
     const t = window.setTimeout(() => setOpen(true), 2500);
     return () => window.clearTimeout(t);
-  }, [excluded]);
+  }, []); // once per page load
 
   if (excluded) return null;
 
