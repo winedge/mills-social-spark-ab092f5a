@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
 import { Wifi } from "lucide-react";
 import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/components/ui/dialog";
@@ -6,13 +6,14 @@ import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/compone
 export function WifiPrompt() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const [open, setOpen] = useState(false);
+  const shown = useRef(false);
   const excluded = pathname.startsWith("/wifi") || pathname.startsWith("/admin");
 
   useEffect(() => {
-    if (excluded) return;
-    const t = window.setTimeout(() => setOpen(true), 2500);
+    if (excluded || shown.current) return;
+    const t = window.setTimeout(() => { shown.current = true; setOpen(true); }, 2500);
     return () => window.clearTimeout(t);
-  }, []); // once per page load
+  }, [excluded]); // once per page load, never on Wi-Fi/admin
 
   if (excluded) return null;
 
