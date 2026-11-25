@@ -3,7 +3,7 @@ import { checkWifiAccess } from "@/lib/wifi-access.functions";
 import { getGuestPortalStatus, signInGuestWifi } from "@/lib/unifi-guest.functions";
 import { useServerFn } from "@tanstack/react-start";
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowUpRight, Check, Info, Mail, ShieldCheck, Wifi } from "lucide-react";
+import { ArrowUpRight, Check, Info, Mail, ShieldCheck } from "lucide-react";
 import millsLogo from "@/assets/mills-logo.png.asset.json";
 import venuePhoto from "@/assets/hero-bar.jpg";
 import { Button } from "@/components/ui/button";
@@ -95,10 +95,6 @@ function GuestWifiPage() {
 
       <section className="flex min-h-[calc(100svh-230px)] items-center justify-center px-6 py-9 sm:px-10 lg:min-h-svh lg:px-12 lg:py-12">
         <div className="w-full max-w-md animate-slide-up">
-          <div className="mb-7 flex size-12 items-center justify-center rounded-md bg-accent/15 text-accent">
-            <Wifi className="size-6" aria-hidden="true" />
-          </div>
-          <p className="mb-2 font-mono text-xs uppercase text-accent">Mills guest access</p>
           <h2 className="font-display text-4xl uppercase leading-none sm:text-5xl">Connect to Wi-Fi</h2>
           <p className="mt-3 text-sm leading-6 text-muted-foreground">
             {settings.welcomeText}
