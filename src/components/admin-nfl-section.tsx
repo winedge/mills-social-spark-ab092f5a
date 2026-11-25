@@ -147,7 +147,7 @@ export function AdminNflSection() {
                       {formatKickoff(g.dateTime)}
                     </td>
                     <td className="px-4 py-3 font-mono text-xs tabular-nums">
-                      {g.live || g.final ? `${g.awayScore ?? 0} – ${g.homeScore ?? 0}` : "-"}
+                      {g.live || g.final ? `${g.awayScore ?? 0} : ${g.homeScore ?? 0}` : "-"}
                     </td>
                     <td className="px-4 py-3">
                       <span

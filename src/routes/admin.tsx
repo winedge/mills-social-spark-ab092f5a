@@ -1651,7 +1651,7 @@ function PulseSection() {
             const { error } = await q; if (error) alert(error.message); else { setEditing(null); refresh(); }
           }} className="space-y-4">
             <div className="grid grid-cols-2 gap-3">
-              <Input name="days_label" label="Days (e.g. MON–WED)" defaultValue={editing.days_label} required />
+              <Input name="days_label" label="Days (e.g. MON to WED)" defaultValue={editing.days_label} required />
               <Input name="title" label="Title" defaultValue={editing.title} required />
             </div>
             <Textarea name="copy" label="Copy" defaultValue={editing.copy} />
@@ -1998,8 +1998,8 @@ function ContactInfoSection() {
       </p>
       <Input label="Address" value={row.address_line} onChange={(e) => set("address_line", e.target.value)} />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <Input label="Hours (Sun–Thu)" value={row.hours_weekday} onChange={(e) => set("hours_weekday", e.target.value)} />
-        <Input label="Hours (Fri–Sat)" value={row.hours_weekend} onChange={(e) => set("hours_weekend", e.target.value)} />
+        <Input label="Hours (Sun to Thu)" value={row.hours_weekday} onChange={(e) => set("hours_weekday", e.target.value)} />
+        <Input label="Hours (Fri to Sat)" value={row.hours_weekend} onChange={(e) => set("hours_weekend", e.target.value)} />
         <Input label="Phone" value={row.phone} onChange={(e) => set("phone", e.target.value)} />
         <Input label="Public email" value={row.email} onChange={(e) => set("email", e.target.value)} />
         <Input label="Instagram URL" value={row.instagram_url} onChange={(e) => set("instagram_url", e.target.value)} />

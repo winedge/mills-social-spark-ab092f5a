@@ -8,7 +8,7 @@ import { useContactInfo } from "@/lib/content";
 const tickerItems = [
   "LIVE: SUNS @ BUCKS · Q3 84-79",
   "UPCOMING: ASU vs ARIZONA · SAT 7PM",
-  "HAPPY HOUR · MON–WED · 4–7PM",
+  "HAPPY HOUR · MON to WED · 4 to 7PM",
   "UFC FIGHT NIGHT · EVERY SATURDAY · NO COVER",
 ];
 

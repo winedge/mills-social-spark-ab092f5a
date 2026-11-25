@@ -71,8 +71,8 @@ export function SiteFooter() {
           </div>
           <div className="space-y-3 font-mono text-sm">
             <p>{contact?.address_line ?? "425 S MILL AVE, TEMPE, AZ 85281"}</p>
-            <p className="text-muted-foreground">{contact?.hours_weekday ?? "SUN–THU · 11AM – 12AM"}</p>
-            <p className="text-muted-foreground">{contact?.hours_weekend ?? "FRI–SAT · 11AM – 2AM"}</p>
+            <p className="text-muted-foreground">{contact?.hours_weekday ?? "SUN to THU · 11AM to 12AM"}</p>
+            <p className="text-muted-foreground">{contact?.hours_weekend ?? "FRI to SAT · 11AM to 2AM"}</p>
             {contact?.phone && (
               <p className="text-muted-foreground pt-3">
                 <a href={`tel:${contact.phone.replace(/[^\d+]/g, "")}`} className="hover:text-accent">

@@ -30,8 +30,8 @@ import {
 const calorieRanges = [
   { id: "all", label: "All Calories", min: 0, max: Infinity },
   { id: "light", label: "Under 300", min: 0, max: 299 },
-  { id: "mid", label: "300 – 600", min: 300, max: 600 },
-  { id: "hearty", label: "600 – 900", min: 600, max: 900 },
+  { id: "mid", label: "300 to 600", min: 300, max: 600 },
+  { id: "hearty", label: "600 to 900", min: 600, max: 900 },
   { id: "indulgent", label: "900+", min: 900, max: Infinity },
 ] as const;
 

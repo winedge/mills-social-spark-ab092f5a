@@ -72,7 +72,7 @@ function ContactPage() {
     {
       icon: Clock,
       label: "Hours",
-      value: `${contact?.hours_weekday ?? "SUN–THU · 11AM – 12AM"}\n${contact?.hours_weekend ?? "FRI–SAT · 11AM – 2AM"}`,
+      value: `${contact?.hours_weekday ?? "SUN to THU · 11AM to 12AM"}\n${contact?.hours_weekend ?? "FRI to SAT · 11AM to 2AM"}`,
     },
     { icon: Phone, label: "Phone", value: contact?.phone ?? "(480) 555-0142" },
     {

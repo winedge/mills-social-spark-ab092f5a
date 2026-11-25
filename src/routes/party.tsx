@@ -169,7 +169,7 @@ function PartyPage() {
         <div className="flex whitespace-nowrap animate-[marquee_35s_linear_infinite] py-3">
           {Array.from({ length: 2 }).map((_, i) => (
             <div key={i} className="flex items-center gap-8 pr-8 font-mono text-xs tracking-[0.25em]">
-              <span>★ LIVE MUSIC THU–SAT</span>
+              <span>★ LIVE MUSIC THU to SAT</span>
               <span>★ DJ NIGHTS EVERY WEEKEND</span>
               <span>★ PRIVATE BOOKINGS 7 DAYS A WEEK</span>
               <span>★ NO COVER BEFORE 9PM</span>

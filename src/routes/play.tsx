@@ -546,7 +546,7 @@ function ArcadeSection() {
 /* ---------- HOUSE RULES ---------- */
 function HouseRules() {
   const rules = [
-    { icon: Clock, k: "Game floor hours", v: "Daily · 11AM – Close" },
+    { icon: Clock, k: "Game floor hours", v: "Daily · 11AM to Close" },
     { icon: Users, k: "Walk-in play", v: "Free with any order" },
     { icon: CircleDot, k: "Table reserve", v: "$15/hr · Text ahead" },
     { icon: Trophy, k: "House rule", v: "Loser racks, winner pours" },

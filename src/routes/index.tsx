@@ -127,10 +127,10 @@ const fallbackSpecials = [
 ];
 
 const fallbackSchedule = [
-  { days: "MON–WED", title: "HAPPY HOUR", copy: "4PM–7PM. $2 off all drafts & signature cocktails.", accent: false, img: pulseHappyHour },
+  { days: "MON to WED", title: "HAPPY HOUR", copy: "4PM to 7PM. $2 off all drafts & signature cocktails.", accent: false, img: pulseHappyHour },
   { days: "THURSDAY", title: "TRIVIA NIGHT", copy: "8PM start. Win a $50 bar tab. Hosted by DJ Mac.", accent: true, img: pulseTrivia },
-  { days: "FRIDAY", title: "LIVE SESSIONS", copy: "Local artists 9PM–late. High-energy acoustic sets.", accent: false, img: pulseLiveMusic },
-  { days: "SAT–SUN", title: "GAME DAY BRUNCH", copy: "Open early for kickoff. Bottomless mimosas & sliders.", accent: true, img: pulseBrunch },
+  { days: "FRIDAY", title: "LIVE SESSIONS", copy: "Local artists 9PM to late. High-energy acoustic sets.", accent: false, img: pulseLiveMusic },
+  { days: "SAT to SUN", title: "GAME DAY BRUNCH", copy: "Open early for kickoff. Bottomless mimosas & sliders.", accent: true, img: pulseBrunch },
 ];
 
 
@@ -514,19 +514,19 @@ function Home() {
               <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-8 gap-x-6">
                 <div className="space-y-1">
                   <p className="font-display text-lg uppercase font-bold tracking-wider text-muted-foreground">Sunday</p>
-                  <p className="text-foreground font-bold text-lg tabular-nums">10AM – 10PM</p>
+                  <p className="text-foreground font-bold text-lg tabular-nums">10AM to 10PM</p>
                 </div>
                 <div className="space-y-1">
                   <p className="font-display text-lg uppercase font-bold tracking-wider text-muted-foreground">Monday</p>
-                  <p className="text-foreground font-bold text-lg tabular-nums">3PM – 10PM</p>
+                  <p className="text-foreground font-bold text-lg tabular-nums">3PM to 10PM</p>
                 </div>
                 <div className="space-y-1">
                   <p className="font-display text-lg uppercase font-bold tracking-wider text-muted-foreground">Wednesday</p>
-                  <p className="text-foreground font-bold text-lg tabular-nums">11AM – 10PM</p>
+                  <p className="text-foreground font-bold text-lg tabular-nums">11AM to 10PM</p>
                 </div>
                 <div className="space-y-1">
                   <p className="font-display text-lg uppercase font-bold tracking-wider text-accent">Tuesday, Thursday, Friday + Saturday</p>
-                  <p className="text-foreground font-bold text-lg tabular-nums text-accent">11AM – 2AM</p>
+                  <p className="text-foreground font-bold text-lg tabular-nums text-accent">11AM to 2AM</p>
                 </div>
               </div>
 
