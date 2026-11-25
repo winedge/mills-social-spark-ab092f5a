@@ -1,6 +1,7 @@
 @import "tailwindcss" source(none);
 @source "../src";
 @import "tw-animate-css";
+@import "@fontsource/oswald/600.css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -18,6 +19,7 @@
   --color-primary-foreground: #07090d;
 
   --font-display: "Barlow Condensed", sans-serif;
+  --font-wifi-display: "Oswald", sans-serif;
   --font-body: "Manrope", sans-serif;
   --font-mono: "JetBrains Mono", monospace;
 
