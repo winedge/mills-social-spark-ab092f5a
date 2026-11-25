@@ -67,7 +67,7 @@ function GuestWifiPage() {
 
   return (
     <main className="min-h-svh bg-background text-foreground lg:grid lg:grid-cols-[minmax(0,1fr)_35rem]">
-      <section className="relative isolate flex min-h-[230px] items-end justify-center overflow-hidden text-center px-6 pb-7 pt-8 sm:px-10 lg:min-h-svh lg:px-14 lg:pb-14 lg:pt-12">
+      <section className="relative isolate flex min-h-[230px] items-center justify-center overflow-hidden text-center px-6 pb-7 pt-20 sm:px-10 lg:min-h-svh lg:px-14 lg:pb-14 lg:pt-24">
         <img
           src={venuePhoto}
           alt="Inside Mill's Modern Social"
@@ -79,7 +79,7 @@ function GuestWifiPage() {
             <Link key={to} to={to} className="rounded-full border border-border bg-background/70 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-foreground backdrop-blur hover:border-accent hover:text-accent">{label}</Link>
           ))}
         </nav>
-        <div className="mx-auto mt-10 flex w-full max-w-2xl flex-col items-center animate-slide-up">
+        <div className="mx-auto flex w-full max-w-2xl flex-col items-center animate-slide-up">
           <img src={millsLogo.url} alt="Mill's Modern Social" className="mb-8 h-auto w-52 object-contain sm:w-60 lg:mb-16" />
           <p className="mb-3 font-mono text-xs uppercase text-accent">83 E Broadway Rd · Tempe, AZ</p>
           <h1 className="mx-auto max-w-xl font-display text-5xl uppercase leading-[0.95] text-balance sm:text-6xl lg:text-7xl">
