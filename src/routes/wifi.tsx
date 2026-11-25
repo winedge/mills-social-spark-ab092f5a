@@ -7,6 +7,7 @@ import { ArrowUpRight, Check, Info, Mail, ShieldCheck, Wifi } from "lucide-react
 import millsLogo from "@/assets/mills-logo.png.asset.json";
 import venuePhoto from "@/assets/hero-bar.jpg";
 import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { useWifiSettings } from "@/lib/wifi-settings";
 
 export const Route = createFileRoute("/wifi")({
@@ -153,14 +154,23 @@ function GuestWifiPage() {
             )}
           </form>
 
-          <details className="group mt-7 border-t border-border pt-5">
-            <summary className="flex cursor-pointer list-none items-center gap-2 text-sm font-semibold marker:hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">
+          <Dialog>
+            <DialogTrigger className="group mt-7 flex w-full cursor-pointer items-center gap-2 border-t border-border pt-5 text-left text-sm font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">
               <ShieldCheck className="size-4 text-accent" aria-hidden="true" />
               Your privacy
-              <span className="ml-auto text-xs text-muted-foreground group-open:hidden">View details</span>
-              <span className="ml-auto hidden text-xs text-muted-foreground group-open:block">Hide details</span>
-            </summary>
-            <div className="space-y-3 pt-4 text-xs leading-5 text-muted-foreground">
+              <span className="ml-auto text-xs text-muted-foreground">View details</span>
+            </DialogTrigger>
+            <DialogContent className="max-h-[85svh] w-[calc(100%-2rem)] max-w-xl overflow-y-auto rounded-lg border-border bg-background p-6 sm:p-7">
+              <DialogHeader className="text-left">
+                <DialogTitle className="flex items-center gap-2 font-display text-2xl uppercase leading-none">
+                  <ShieldCheck className="size-5 shrink-0 text-accent" aria-hidden="true" />
+                  Your privacy
+                </DialogTitle>
+                <DialogDescription className="text-xs leading-5">
+                  How Mill’s Modern Social handles guest Wi-Fi sign-in information.
+                </DialogDescription>
+              </DialogHeader>
+              <div className="space-y-3 text-xs leading-5 text-muted-foreground">
               <p>
                 Mill’s Modern Social, 83 E Broadway Rd, Tempe, AZ 85282, is responsible for this sign-in page. Wi-Fi equipment is operated using Ubiquiti UniFi; Spectrum supplies internet. Names and email are processed only during sign-in and are not saved or sent to the Wi-Fi equipment.
               </p>
@@ -181,8 +191,9 @@ function GuestWifiPage() {
                 Privacy questions: {settings.privacyEmail}
                 <ArrowUpRight className="size-3.5" aria-hidden="true" />
               </a>
-            </div>
-          </details>
+              </div>
+            </DialogContent>
+          </Dialog>
 
           <p className="mt-7 flex items-center gap-2 text-xs text-muted-foreground">
             <Check className="size-3.5 text-accent" aria-hidden="true" />
