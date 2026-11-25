@@ -12,7 +12,7 @@
 - Share photo/video masonry and accessible media lightboxes through `MediaMasonry` so Party and Events use consistent media handling.
 - Render full Events and Party archives with `GalleryArchive` and `MediaMasonry` on unnested gallery routes so the existing content pages do not need to become layouts; reuse the same manifests to include all saved media.
 - Persist Events and Party gallery manifests and uploads in separate `galleries/{variant}/` folders in existing `site-media` storage; reuse its public-read/admin-write policies rather than adding duplicate content tables.
-- Mount route-aware, reduced-motion-aware scroll reveals once in the root; exclude admin and dialogs so controls remain immediately usable.
+- Mount route-aware, reduced-motion-aware scroll reveals once in the root; exclude admin and dialogs, use viewport-entry observation and fixed-size clipping so long content sections cannot stay hidden.
 - Keep independent device hero uploads on existing `site-media` storage and `site_media` settings (`hero_video_url` for desktop, `mobile_hero_video_url` for mobile); share device selection through `hero-video` and expose both uploaders in Homepage navigation to preserve existing videos and avoid duplicate contracts.
 - Keep `/wifi` as a standalone, privacy-first captive-portal screen; only the selected venue Wi-Fi provider can authorize guest network access.
 - Load the Wi-Fi headline font from a local font package through global CSS so the captive portal makes no third-party font requests.

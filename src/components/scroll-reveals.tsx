@@ -13,7 +13,9 @@ export function ScrollReveals() {
         entry.target.setAttribute("data-revealed", "true");
         observer.unobserve(entry.target);
       }
-    }, { threshold: 0.08, rootMargin: "0px 0px -24px 0px" });
+    // Long content sections can be taller than the viewport, so a percentage
+    // threshold can never be reached. Reveal as soon as any part enters view.
+    }, { threshold: 0, rootMargin: "0px 0px -24px 0px" });
     const register = () => {
       document.querySelectorAll("section > div, main > div > section, [data-media-reveal]").forEach((element) => {
         if (marked.has(element) || element.closest("header, footer, [role=dialog]")) return;
