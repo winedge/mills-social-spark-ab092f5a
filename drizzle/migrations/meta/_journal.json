@@ -22,6 +22,13 @@
       "when": 1795586442927,
       "tag": "0002_unifi_guest_access_safety_controls",
       "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1795617092493,
+      "tag": "0003_tighten_public_forms_and_assets",
+      "breakpoints": true
     }
   ]
 }
