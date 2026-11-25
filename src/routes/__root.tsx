@@ -17,6 +17,7 @@ import { RoutePreloader } from "../components/route-preloader";
 import { ReservationModal } from "../components/reservation-modal";
 import { AnalyticsTracker } from "../components/analytics-tracker";
 import { VoiceWidget } from "../components/voice-widget";
+import { WifiPrompt } from "../components/wifi-prompt";
 import { ScrollReveals } from "../components/scroll-reveals";
 
 
@@ -146,6 +147,7 @@ function RootComponent() {
       <ReservationModal />
       <AnalyticsTracker />
       <VoiceWidget />
+      <WifiPrompt />
     </QueryClientProvider>
 
   );
