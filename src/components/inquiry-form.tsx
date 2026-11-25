@@ -46,7 +46,7 @@ export function InquiryForm({
           guests: guestsRaw ? Number(guestsRaw) : undefined,
           subject: [String(fd.get("space") ?? "").trim(), String(fd.get("subject") ?? "").trim()]
             .filter(Boolean)
-            .join(" — "),
+            .join(" · "),
           message: String(fd.get("message") ?? "").trim(),
         },
       });

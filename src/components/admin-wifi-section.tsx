@@ -16,7 +16,7 @@ export function AdminWifiSection() {
 
   const save = async (e: FormEvent) => {
     e.preventDefault(); setBusy(true); setMsg("");
-    try { await saveWifiSettings(s); setMsg("Saved — the Wi-Fi page is updated."); }
+    try { await saveWifiSettings(s); setMsg("Saved. The Wi-Fi page is updated."); }
     catch (err) { setMsg(err instanceof Error ? err.message : "Couldn't save."); }
     finally { setBusy(false); }
   };

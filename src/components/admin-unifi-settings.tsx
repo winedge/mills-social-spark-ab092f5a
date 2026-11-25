@@ -63,7 +63,7 @@ export function AdminUnifiSettings() {
         </label>
         <p className="text-xs leading-5 text-muted-foreground">Open your console at unifi.ui.com. Copy the ID following /consoles/ in its address. Remote Management and the UniFi Connector must be supported and enabled; a local address such as 192.168.1.1 cannot be reached by this website.</p>
         <label className="block space-y-2 text-sm"><span className="flex items-center gap-2"><KeyRound className="size-4" />UniFi API key</span>
-          <input type="password" autoComplete="new-password" className={field} value={key} placeholder={config.hasApiKey ? "Key saved — leave blank to keep it" : "Paste your UniFi API key"} onChange={(e) => { setKey(e.target.value); update({ accessEnabled: false }); }} />
+          <input type="password" autoComplete="new-password" className={field} value={key} placeholder={config.hasApiKey ? "Key saved. Leave blank to keep it." : "Paste your UniFi API key"} onChange={(e) => { setKey(e.target.value); update({ accessEnabled: false }); }} />
         </label>
         <p className="text-xs leading-5 text-muted-foreground">Create a key for the console owner’s account in UniFi Site Manager. It is encrypted when saved and never displayed again. The connection test only reads the list of sites; it does not authorize devices or collect guest details.</p>
         <div className="grid gap-4 sm:grid-cols-2">

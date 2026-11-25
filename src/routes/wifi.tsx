@@ -86,7 +86,7 @@ function GuestWifiPage() {
             Good times.<br />Great connection.
           </h1>
           <p className="mx-auto mt-4 hidden max-w-lg text-sm text-foreground/80 sm:block lg:text-base">
-            Join us for the game, stay for the company — and get online while you’re here.
+            Join us for the game, stay for the company, and get online while you’re here.
           </p>
         </div>
       </section>
